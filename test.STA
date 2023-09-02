@@ -1,0 +1,70 @@
+
+ROM used:   780/8192 (10%)
+            780/8192 (10%) including unused fragments
+
+            0.7 Average locations per line
+            6.6 Average locations per statement
+
+RAM used:   6/368 (2%) at main() level
+            23/368 (6%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   52    19  16  test.c
+   10     0   0  test.h
+  661     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h
+  456   100  84  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c
+----- -----
+ 1179   119 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   3    1             @delay_ms1
+0      8   1    0   404  4.2  @const626
+ Inline         3   760  4.5  lcd_read_byte
+0     49   6    2   262  3.7  lcd_read_nibble
+0     47   6    1   399  2.4  lcd_send_nibble
+0     93  12    3   415  3.7  lcd_send_byte
+0     61   8    2   704  5.0  lcd_init
+0     18   2    4   208  6.3  lcd_gotoxy
+0     44   6    1   354  4.7  lcd_putc
+0     21   3    1    98  3.3  @delay_ms2
+0    116  15    1   439  3.2  MAIN
+0      1   0    0             @const665
+0     75  10    4             @PSTRINGC7_645
+0      6   1    0   760  4.5  @const667
+0      1   0    0   262  3.7  @const668
+0      6   1    0   399  2.4  @const669
+0      6   1    0   415  3.7  @const670
+0      1   0    0   704  5.0  @const671
+0      6   1    0   208  6.3  @const672
+0     86  11    5   354  4.7  @PSTRINGCN7_645
+0     21   3    3   236  3.5  @DIV88
+0     89  11    6   267  6.8  @PRINTF_D_645
+ Inline         0    93  2.1  @cinit1
+
+Program metrics:
+    Functions               20
+    Statements              119
+    Comments                252
+    Volume (V)              13621
+    Difficulty (D)          82.6
+    Effort to implement (E) 1125719
+    Time to implement (T)   17 hours, 22 minutes
+    Est Delivered Bugs (B)  4
+    Cyclomatic Complexity   19
+    Maintainability (MI)    73
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF   776  1268  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
